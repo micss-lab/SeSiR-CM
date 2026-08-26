@@ -79,10 +79,10 @@ Files:
 
 ```text
 Embeddings/
-├── Gemini_Embedding.xlsx
-├── Qwen3_Embedding_8B.xlsx
-├── SBERT_Embedding_2_classification.xlsx
-└── bert_finetuned_embeddings.xlsx
+─ Gemini_Embedding.xlsx
+─ Qwen3_Embedding_8B.xlsx
+─ SBERT_Embedding_2_classification.xlsx
+─ bert_finetuned_embeddings.xlsx
 ```
 
 These files are the main inputs to the retrieval notebooks.
