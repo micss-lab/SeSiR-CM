@@ -71,6 +71,9 @@ If a notebook contains a local path from the original experiment environment, ch
 
 ## 3. Embedding files
 
+### Source Data
+
+The raw data used in this study are conceptual models collected in the ModelSet dataset, a labelled dataset of Ecore and UML models. The original ModelSet dataset is publicly available from the ModelSet repository: https://github.com/modelset/modelset-dataset. The raw models were processed through several preprocessing steps before being transformed into semantic vector representations. The resulting embeddings used in the experiments are provided in the `Embeddings/` directory. Therefore, reproducing the retrieval experiments reported in this repository does not require downloading or preprocessing the original ModelSet data; the provided embedding files are sufficient to reproduce the reported retrieval results.
 All retrieval experiments use the precomputed embeddings in:
 
 `Embeddings/`
