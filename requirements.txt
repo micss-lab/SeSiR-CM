@@ -1,0 +1,27 @@
+# Core numerical and data-processing libraries
+numpy
+pandas
+scipy
+openpyxl
+
+# Machine learning and evaluation
+scikit-learn
+
+# Vector indexing and retrieval
+faiss-cpu
+
+# Semantic embedding models
+torch
+transformers
+sentence-transformers
+
+# Visualization
+matplotlib
+
+# Utilities
+tqdm
+joblib
+
+# Notebook execution
+jupyter
+ipykernel
