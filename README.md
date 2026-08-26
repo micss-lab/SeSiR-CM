@@ -112,7 +112,7 @@ The hybrid experiments should be run only after the individual retrieval experim
 
 ---
 
-# 5. Experiment 1 — Exhaustive Vector Search (FAISS Flat)
+# 5. Experiment 1 - Exhaustive Vector Search (FAISS Flat)
 
 FAISS Flat compares the query with the complete embedding collection and is used as the comparative baseline in the paper.
 
@@ -166,7 +166,7 @@ The Excel result file contains the values used to obtain the Precision@K, Recall
 
 ---
 
-# 6. Experiment 2 — Classification-Guided Retrieval
+# 6. Experiment 2 - Classification-Guided Retrieval
 
 Classification-guided retrieval first uses class predictions to reduce the candidate space and then performs semantic similarity retrieval within the selected candidates.
 
@@ -219,7 +219,7 @@ Classifier_guided_Retrieval_NDCG_Recall_cosine.png
 
 ---
 
-# 7. Experiment 3 — FAISS IVF
+# 7. Experiment 3 - FAISS IVF
 
 IVF reduces the search space by organizing the embeddings into partitions and searching selected partitions instead of processing the complete repository.
 
@@ -265,7 +265,7 @@ FAISS_IVF_NDCG_Recall_Cosine.png
 
 ---
 
-# 8. Experiment 4 — FAISS IVFPQ
+# 8. Experiment 4 - FAISS IVFPQ
 
 IVFPQ combines IVF indexing with product quantization. It is evaluated as a compressed approximate retrieval strategy.
 
@@ -311,7 +311,7 @@ FAISS_IVFQ_Quantization_NDGC_Accuracy_cosine.png
 
 ---
 
-# 9. Experiment 5 — FAISS HNSW
+# 9. Experiment 5 - FAISS HNSW
 
 HNSW performs graph-based vector retrieval and is evaluated as a low-latency retrieval strategy.
 
@@ -356,7 +356,7 @@ FAISS_HNSW_NDGC_Accuracy_cosine.png
 
 ---
 
-# 10. Experiment 6 — Static Filtered Vector Search
+# 10. Experiment 6 - Static Filtered Vector Search
 
 This experiment restricts retrieval to models with the same ground-truth class label as the query. It represents an ideal class-filtered reference condition and also includes the adaptive threshold analysis described in the paper.
 
@@ -398,7 +398,7 @@ The threshold figure is used to inspect the adaptive threshold-based evaluation,
 
 ---
 
-# 11. Experiment 7 — Hybrid Retrieval with Reciprocal Rank Fusion (RRF)
+# 11. Experiment 7 - Hybrid Retrieval with Reciprocal Rank Fusion (RRF)
 
 RRF combines the ranked outputs of the individual retrieval methods. The final paper uses the **NoFlat** configuration: exhaustive FAISS Flat is kept only as a baseline and is not included in the fusion.
 
@@ -459,7 +459,7 @@ These are the RRF figures corresponding to the final configuration used in the p
 
 ---
 
-# 12. Experiment 8 — Performance-Weighted Reciprocal Rank Fusion (WRRF)
+# 12. Experiment 8 - Performance-Weighted Reciprocal Rank Fusion (WRRF)
 
 WRRF extends standard RRF by giving different contributions to the participating retrieval strategies according to their observed effectiveness.
 
@@ -510,7 +510,7 @@ Only the `NoFlat` outputs correspond to the final hybrid configuration reported 
 
 ---
 
-# 13. Experiment 9 — Query-Time Evaluation
+# 13. Experiment 9 - Query-Time Evaluation
 
 This experiment measures the average query latency of the individual vector indexing strategies.
 
